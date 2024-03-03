@@ -95,3 +95,109 @@ body{
     flex-wrap: wrap;
 }
 
+
+/*====== Styling Navigation Bar ======*/
+
+header{
+    left: 0;
+    right: 0;
+    z-index: 20;
+    transition: 0.8s;
+    padding: 15px;
+    position: fixed;
+    background-color: var(--bg-color1);
+}
+
+header .portfolio-row.header-wrap{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-name a{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--color1);
+}
+
+.portfolio-navbar{
+    display: none;
+}
+
+.navbar-toggle i{
+    font-size: 1.25rem;
+    line-height: 30px;
+    cursor: pointer;
+    color: var(--color1);
+}
+
+
+/*====== Responsive Navigation Bar ======*/
+
+.portfolio-navbar.show{
+    display: block;
+    position: absolute;
+    background-color: rgb(236, 241, 256);
+    width: 100%;
+    left: 0;
+    top: 65px;
+    padding: 15px;
+    border-top: 5px solid #000;
+    text-align: center;
+}
+
+.portfolio-navbar ul li{
+    display: block;
+}
+
+.portfolio-navbar ul li a{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 45px;
+}
+
+/*---------------- Large devices (desktops, 992px and up)  -----------*/
+
+@media (min-width:768px){
+
+        /*======= Responsive Universal CSS Properties =======*/
+
+        h1{
+            font-size: 4rem;
+        }
+
+        h2{
+            font-size: 3.5rem;
+            text-align: unset;
+            color: var(--color1);
+            font-weight: 600;
+        }
+
+        /*========= Header Responsive ===========*/
+
+        header{
+            background-color: transparent;
+            position: absolute;
+            padding: 0 15px;
+        }
+
+        .navbar-toggle i{
+            display: none;
+        }
+
+        .portfolio-navbar{
+            display: block;
+        }
+
+        .portfolio-navbar ul li{
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        .portfolio-navbar ul li a{
+            color: var(--color1);
+            line-height: 65px;
+        }
+
+}
