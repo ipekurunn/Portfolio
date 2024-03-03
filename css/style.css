@@ -223,7 +223,38 @@ a.about-image:hover{
     filter: drop-shadow(0 0 30px rgba(130, 237, 255, 0.97));
 }
 
+/*========= Style For Resume Section ===========*/
 
+.resume{
+    padding: 60px 0;
+    background-color: var(--bg-color2);
+}
+
+/*========= Resume Intro ===========*/
+
+.resume-intro{
+    width: 100%;
+}
+
+.resume-text{
+    margin-top: 18%;
+}
+
+/*========= Hello Button ===========*/
+
+.hello-btn a{
+    display: inline-block;
+    margin: 20px 0;
+    padding: 15px 45px;
+    color: #FFF;
+    background-color: #6366f1;
+    line-height: 30px;
+    transition: all 0.3s ease-out 0s;
+}
+
+.hello-btn a:hover{
+    background-color: #293b5f;
+}
 
 /*---------------- Large devices (desktops, 992px and up)  -----------*/
 
