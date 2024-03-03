@@ -281,4 +281,10 @@ a.about-image:hover{
             text-align: unset;
         }
 
+        /*========= About Image Responsive ===========*/
+        .about-image{
+            width: 40%;
+            order: 2;
+        }
+
 }
