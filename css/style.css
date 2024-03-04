@@ -495,6 +495,42 @@ a.about-image:hover{
     opacity: 1;
 }
 
+/*========= Style for contact section ===========*/
+
+#contact{
+    background-color: var(--bg-color1);
+    padding: 60px 0;
+}
+
+.contact-general{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-card{
+    text-align: center;
+}
+
+.contact-card .icon i{
+    font-size: 2.5rem;
+    color: var(--color1);
+}
+
+.contact-content{
+    margin-top: 20px;
+}
+
+.contact-content h5{
+    font-size: 1rem;
+    color: var(--color1);
+    font-weight: 500;
+}
+
+.contact-content span{
+    color: var(--color1);
+}
 
 
 /*---------------- Large devices (desktops, 992px and up)  -----------*/
@@ -619,5 +655,20 @@ a.about-image:hover{
         .portfolio-wrapper{
             flex-direction: row;
         }
+        
+        /*========= Contact Responsive ===========*/
 
+        .contact-general{
+            grid-template-columns: repeat(3,1fr);
+            margin: 4rem 0;
+        }
+
+        .contact-general h2{
+            display: none;
+        }
+
+        .contact-card:nth-of-type(2){
+            border-left: 1px solid #d9d9d9;
+            border-right: 1px solid #d9d9d9;
+        }
 }
