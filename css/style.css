@@ -606,4 +606,18 @@ a.about-image:hover{
             grid-template-columns: repeat(3, 1fr);
         }
 
+        /*========= Projects Responsive ===========*/
+
+        .filter-wrap{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /*========= Portfolio Gallery Responsive ===========*/
+
+        .portfolio-wrapper{
+            flex-direction: row;
+        }
+
 }
