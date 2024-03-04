@@ -421,6 +421,80 @@ a.about-image:hover{
     align-items: center;
 }
 
+/*========= Portfolio Gallery ===========*/
+
+.portfolio-wrapper{
+    display: flex;
+    gap: 15px;
+}
+
+.portfolio-wrapper .portfolio-col{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.portfolio-item.development img{
+    border-radius: 5px;
+    height: 350px;
+}
+
+.portfolio-item.design img{
+    border-radius: 5px;
+    height: 250px;
+}
+
+.portfolio-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.portfolio-item.show {
+    animation: fadeIn 4.5s ease;
+}
+
+.portfolio-item.hide {
+    display: none;
+}
+
+.portfolio-item-content {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    right: 25px;
+    bottom: 25px;
+    background-color: rgba(16, 16, 16, .5);
+    transition: .5s;
+    transform: scale(1.15);
+    opacity: 0;
+}
+
+.product-title{
+    width: 100%;
+    position: absolute;
+    bottom: -45px;
+    padding: 15px 30px;
+    opacity: 0;
+    transition: .6s;
+    text-align: center;
+    color: #FFF;
+}
+
+.product-title h4,
+.product-title p{
+    color: #FFF;
+}
+
+.portfolio-item:hover .portfolio-item-content{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.portfolio-item:hover .product-title{
+    bottom: 30%;
+    opacity: 1;
+}
+
 
 
 /*---------------- Large devices (desktops, 992px and up)  -----------*/
