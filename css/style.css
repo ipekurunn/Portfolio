@@ -786,4 +786,11 @@ a.about-image:hover{
             border-left: 1px solid #d9d9d9;
             border-right: 1px solid #d9d9d9;
         }
+
+        /* ======= Contact Form Responsive ======== */
+
+        #contact-form {
+            margin: 2rem auto;
+            width: 80%;
+        }
 }
