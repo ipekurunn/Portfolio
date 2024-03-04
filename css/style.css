@@ -510,4 +510,10 @@ a.about-image:hover{
             margin-bottom: 0;
         }
 
+        /*========= Service Responsive ===========*/
+
+        .service-row{
+            grid-template-columns: repeat(3, 1fr);
+        }
+
 }
