@@ -60,7 +60,7 @@ window.onload = function () {
       event.preventDefault();
       document.querySelector(".loader").classList.add("show");
       // Replace With Your Email Service ID & Contact Form ID Which You Will Get After Registering With EmailJs
-      emailjs.sendForm("service_c4xgmik", "template_1rb4736", this).then(
+      emailjs.sendForm("service_vod6aiy", "template_rehs07p", this).then(
         function () {
           document.getElementById("contact-form").reset();
           document.querySelector(".loader").classList.remove("show");
