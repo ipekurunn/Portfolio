@@ -8,6 +8,8 @@
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 </head>
 
@@ -102,6 +104,9 @@
                         <button class="btn" type="button" data-id="experience">
                             Experince
                         </button>
+                        <button class="btn" type="button" data-id="certificates">
+                            Certificates
+                        </button>
                         <button class="btn" type="button" data-id="skills">
                             Skills
                         </button>
@@ -136,19 +141,54 @@
                     </div>
 
                     <!-- Experince Tab Ends -->
+                    <!-- Certificates Tab Begins -->
+                    <div class="resume-tab" id="certificates">
+                        <div class="qualification-content">
+                            <h4 class="role">Timus Network Full Stack Developer Bootcamp</h4>
+                            <h6 class="organization">Patika.dev</h6>
+                            <span class="years">October 2023 - December 2023</span>
+                            <p><b>Final Project:</b> Energy Management Dashboard</p>
+                            <p><b>Tech Stack:</b>JavaScript, Node.js, Nest, Vue.js, Vuetify, Pinia, PostgreSQL, Elasticsearch, JWT and Refresh Token, i18n, Commitlint (Husky), ESlint, Heroku.</p>
+                            <p><b>Project Overview:</b>Developed a web-based dashboard for energy management, catering to factories and industrial users. The platform enables efficient tracking, analysis, and management of energy consumption and costs.</p>
+
+                        </div>
+                        <div class="qualification-content">
+                            <h4 class="role">C# Programming and Unity</h4>
+                            <h6 class="organization">University of Colorado/Coursera</h6>
+                            <span class="years">December 2022 - February 2023</span>
+                            <ul class="certificate-list">
+                                <p><b>C# Class Development</b>- ID:GP9C38MQVMKL</p>
+                                <p><b>More C# Programming and Unity</b>– ID:V6Z8UESPESQ3</p>
+                                <p><b>Introduction to C# Programming and Unity</b>– ID:59EL85SBZKDL</p>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Certificates Tab Ends -->
                     <!-- Skills Tab Begins -->
                     <div class="resume-tab" id="skills">
                         <div class="qualification-content">
                             <h4 class="skill-title">Computer Skills:</h4>
-                            <span class="skill-type">JavaScript, Java, Python, C# (beginner), Vue.js, SQL, Unity 3D, Illustrator, AutoCAD</span> 
+                            <a href="https://www.javascript.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="eclipse" width="40" height="40"/> </a>
+                            <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="vuejs" width="40" height="40" height="40"/> </a> 
+                            <a href="https://nestjs.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg" alt="nestjs" width="100" height="40"/> </a>                          
+                            <a href="https://nodejs.org/en" target="_blank" rel="noreferrer"> <img src="https://iconape.com/wp-content/files/zp/83696/png/nodejs-2.png" alt="nodejs" width="100" height="40"/> </a>                          
+                            <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> 
+                            <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
+                            <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> 
+                            <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40" height="40"/> </a> 
                         </div>
                         <div class="qualification-content">
                             <h4 class="skill-title">Language:</h4>
+                            <div class="meter orange nostripes">
+                                <span style="width: 33.3%"></span>
+                            </div>
                             <span class="skill-type"> Turkish(native), English(advanced), Deutsch(beginner)</span> 
                         </div>
                         <div class="qualification-content">
                             <h4 class="skill-title">Hobbies:</h4>
-                            <span class="skill-type">Kitesurf (Instructor), Scuba Diving (2 stars diver, first aid, deep dive, and navigation dive specialties), Snowboard</span> 
+                            <p>Kitesurf (Instructor)</p>
+                            <p>Scuba Diving (2 stars diver, first aid, deep dive, and navigation dive specialties)</p>
+                            <p>Snowboard</p>
                         </div>
                         <div class="qualification-content">
                             <h4 class="skill-title">Leadership and Teamwork:</h4>
@@ -219,11 +259,14 @@
             <div class="portfolio-wrapper">
                 <div class="portfolio-col">
                     <div class="portfolio-item design">
-                        <img src="image/lens.jpg" alt="">
+                        <a href="https://github.com/ipekurunn/Nike-Website-Design"></a>
+                        <img src="image/nike.png" alt="">
                         <div class="portfolio-item-content">
                             <div class="product-title">
-                                <h4>proje1</h4>
-                                <p>proje açıklaması</p>
+                                <h4>Nike Website Design</h4>
+                                <p>
+                                    açıklama
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -293,8 +336,8 @@
                     <div class="portfolio-row">
                         <div class="name-email">
                             <div class="input-wrapper">
-                                <label for="name">Name</label>
-                                <input type="text" class="input-control" name="name" placeholder="Enter your name">
+                                <label for="nameInput">Name</label>
+                                <input type="text" class="input-control" id="nameInput" name="name" placeholder="Enter your name">
                             </div>
                             <div class="input-wrapper">
                                 <label for="email">Email</label>
@@ -327,10 +370,44 @@
     <footer>
         <div class="portfolio-container">
             <div class="portfolio-row footer wrap">
-                <ul class="social-icons">
-                    <li><a href="#">Linked-in</a></li>
-                    <li><a href="#">Git Hub</a></li>
-                </ul>
+                <div class="column-logo">
+                    <img src="image/logo.png" alt="logo">
+                </div>
+                <div class="column-sitemap">
+                    <h3>Site Map</h3>
+                    <ul>
+                        <li>
+                            <a href="#about" class="navbar-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#resume" class="navbar-link">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="navbar-link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="navbar-link">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="navbar-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column-social">
+                    <ul class="social-icons">
+                        <h3>Connect Me</h3>
+                        <li><i class="lni lni-linkedin-original"></i></li>
+                        <li><i class="lni lni-github-original"></i></li>
+                    </ul>
+                </div>
+                <div class="column-loc">
+                    <ul class="location">
+                        <h3>Location</h3>
+                        <li><i class="fa-solid fa-location-dot"></i></li>
+                        <p>İzmir / Turkey</p>
+                    </ul>
+                </div>
+                
             </div>
         </div>
     </footer>
