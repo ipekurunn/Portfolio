@@ -478,6 +478,23 @@ a.about-image:hover{
     align-items: center;
 }
 
+.portfolio-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-works {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.portfolio-filter-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
 
 /*========= Portfolio Gallery ===========*/
 
