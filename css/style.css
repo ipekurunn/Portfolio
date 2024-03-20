@@ -98,36 +98,43 @@ body{
 
 /*====== Styling Navigation Bar ======*/
 
-header{
+section nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0, 0, 0.6);
+    background: white;
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
-    z-index: 20;
-    transition: 0.8s;
-    padding: 15px;
-    position: fixed;
-    background-color: var(--bg-color1);
+    z-index: 100;
 }
 
-header .portfolio-row.header-wrap{
-    justify-content: space-between;
-    align-items: center;
+section nav .logo{
+    font-size: 25px;
+    color: linear-gradient(to right, #977ec7 0%, #f987d6 100%);
+    margin: 5px 0;
+    position: block;
+    left: -4%;
 }
 
-.brand-name a{
-    font-size: 1.25rem;
-    font-weight: 300;
-    color: var(--color1);
+section nav ul{
+    list-style: none;
 }
 
-.portfolio-navbar{
-    display: none;
+section nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
 }
 
-.navbar-toggle i{
-    font-size: 1.25rem;
-    line-height: 30px;
-    cursor: pointer;
-    color: var(--color1);
+section nav ul li a:hover{
+    color: #c72092;
 }
 
 
@@ -415,6 +422,7 @@ a.about-image:hover{
 }
 
 /*========= Style for services section ===========*/
+
 
 #services{
     padding: 60px 0;
@@ -760,18 +768,18 @@ footer{
     gap: 15px;
     text-align: center;
     width: 120px;
-    margin-right: 155px;
-    margin-left: 100px;
+    margin-right: 50px;
+    margin-left: 80px;
 }
 
 .column-social .social-icons{
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
     text-align: center;
     position: relative;
-    margin-left: 155px;
+    margin-left: 80px;
 }
 
 .social-icons li i {
@@ -786,7 +794,8 @@ footer{
     gap: 15px;
     text-align: center;
     width: 120px;
-    margin-left: 155px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 /*---------------- Large devices (desktops, 992px and up)  -----------*/

@@ -9,45 +9,45 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio Website</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
 </head>
 
 <body>
     <!-- Header Begins -->
-    <header>
-        <div class="porfolio-container">
-            <div class="portfolio-row header-wrap">
-                <div class="brand-name">
-                    <a href="#" class="logo">İpek</a>
-                </div>
-                <!-- Header Navigation Begins -->
-                <div class="portfolio-navbar">
-                    <ul>
-                        <li>
-                            <a href="#about" class="navbar-link">Home</a>
-                        </li>
-                        <li>
-                            <a href="#resume" class="navbar-link">Resume</a>
-                        </li>
-                        <li>
-                            <a href="#services" class="navbar-link">Services</a>
-                        </li>
-                        <li>
-                            <a href="#projects" class="navbar-link">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="navbar-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Header Navigation Ends -->
-                <div class="navbar-toggle">
-                    <i class="lni lni-grid-alt"></i>
-                </div>
+    <section>
+        <nav>
+            <div class="brand-name">
+                <a href="#" class="logo">İpek</a>
             </div>
-        </div>
-    </header>
+            <!-- Header Navigation Begins -->
+            <div class="portfolio-navbar">
+                <ul>
+                    <li>
+                        <a href="#about" class="navbar-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#resume" class="navbar-link">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="navbar-link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="navbar-link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="navbar-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Header Navigation Ends -->
+            <div class="navbar-toggle">
+                <i class="lni lni-grid-alt"></i>
+            </div>
+        </nav>
+    </section>
     <!-- Header Ends -->
     <!-- About Section Begins -->
     <section id="about">
@@ -205,10 +205,54 @@
     <!-- Resume Section Ends -->
 
     <!-- Service Section Begins -->
+    <section>
+        <div class="portfolio-container">
+            <h2>
+                <strong>Daily Insights</strong>💭
+            </h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">  
+                    <div class="swiper-slide">
+                        <div class="service-row">
+                            <div class="service-card">
+                                <div class="icon">
+                                    <i class="lni lni-python"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h6>Web Development</h6>
+                                    <p>Make data-driven decisions with our expert data analytics.</p>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <div class="icon">
+                                    <i class="lni lni-python"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h6>Web Development</h6>
+                                    <p>Make data-driven decisions with our expert data analytics.</p>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <div class="icon">
+                                    <i class="lni lni-python"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h6>Web Development</h6>
+                                    <p>Make data-driven decisions with our expert data analytics.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="services">
         <div class="portfolio-container">
             <h2>
-                <strong>What Do I Help</strong>🛠️
+                <strong>Daily Insights</strong>💭
             </h2>
             <div class="service-row">
                 <div class="service-card">
@@ -403,7 +447,7 @@
                 <div class="column-social">
                     <ul class="social-icons">
                         <h3>Connect Me</h3>
-                        <li><i class="lni lni-linkedin-original"></i></li>
+                        <li><a href="https://www.linkedin.com/in/ipek-urun/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
                         <li><i class="lni lni-github-original"></i></li>
                     </ul>
                 </div>
@@ -426,5 +470,23 @@
     </script>
 
     <script src="js/script.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 'auto',
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    </script>
+
 </body>
 </html>
