@@ -477,7 +477,7 @@ a.about-image:hover{
 
 #projects{
     padding: 60px 0;
-    background-color: var(--bg-color2);
+    background-color: #FFF;
 }
 
 .filter-wrap{

@@ -60,7 +60,9 @@
                             It's İpek
                         </h1>
                         <h3>Frontend Developer</h3>
-                        <p>Heyi are you looking for a frontend developer? Let's shake hands with me.</p>
+                        <p>
+                            As a frontend developer, I embarked on a passionate journey to brighten up the digital world and enhance user experience. 
+                            I love sharing the stories behind the code and learning new things together. Scroll down to learn more about me!</p>
                     </div>
                 </div>
                 <!-- Greeting and Introduction Ends -->
@@ -203,52 +205,7 @@
         </div>
     </section>
     <!-- Resume Section Ends -->
-
     <!-- Service Section Begins -->
-    <section>
-        <div class="portfolio-container">
-            <h2>
-                <strong>Daily Insights</strong>💭
-            </h2>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">  
-                    <div class="swiper-slide">
-                        <div class="service-row">
-                            <div class="service-card">
-                                <div class="icon">
-                                    <i class="lni lni-python"></i>
-                                </div>
-                                <div class="service-content">
-                                    <h6>Web Development</h6>
-                                    <p>Make data-driven decisions with our expert data analytics.</p>
-                                </div>
-                            </div>
-                            <div class="service-card">
-                                <div class="icon">
-                                    <i class="lni lni-python"></i>
-                                </div>
-                                <div class="service-content">
-                                    <h6>Web Development</h6>
-                                    <p>Make data-driven decisions with our expert data analytics.</p>
-                                </div>
-                            </div>
-                            <div class="service-card">
-                                <div class="icon">
-                                    <i class="lni lni-python"></i>
-                                </div>
-                                <div class="service-content">
-                                    <h6>Web Development</h6>
-                                    <p>Make data-driven decisions with our expert data analytics.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="services">
         <div class="portfolio-container">
             <h2>
@@ -260,8 +217,8 @@
                         <i class="lni lni-css3"></i>
                     </div>
                     <div class="service-content">
-                        <h6>Web Development</h6>
-                        <p>Elevate your online presence with stunning web designs.</p>
+                        <h6>Coming Soon..</h6>
+                        <p></p>
                     </div>
                 </div>
                 <div class="service-card">
@@ -269,8 +226,8 @@
                         <i class="lni lni-adobe"></i>
                     </div>
                     <div class="service-content">
-                        <h6>Web Development</h6>
-                        <p>Transform your brand narrative with innovative designs.</p>
+                        <h6>Coming Soon..</h6>
+                        <p></p>
                     </div>
                 </div>
                 <div class="service-card">
@@ -278,8 +235,8 @@
                         <i class="lni lni-python"></i>
                     </div>
                     <div class="service-content">
-                        <h6>Web Development</h6>
-                        <p>Make data-driven decisions with our expert data analytics.</p>
+                        <h6>Coming Soon..</h6>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -350,7 +307,7 @@
                 <div class="portfolio-col">
                     <div class="portfolio-item development">
                         <a href="https://github.com/ipekurunn/SEDS504_HomewWork1">
-                            <img src="image/blood.jpg" alt="">
+                            <img src="image/blood.png" alt="">
                             <div class="portfolio-item-content">
                                 <div class="product-title">
                                     <h4>Blood Pressure Monitor</h4>
@@ -485,6 +442,26 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
+        });
+    </script>
+
+    <script>
+        // Sayfadaki tüm service-card elementlerini seç
+        const serviceCards = document.querySelectorAll('.service-card');
+
+        // Her bir service-card elementine tıklama olayı ekle
+        serviceCards.forEach(card => {
+            card.addEventListener('click', function() {
+                // Tıklanan kartın bir link içerisinde olup olmadığını kontrol et
+                const link = this.querySelector('a');
+                if (link) {
+                    // Eğer bir link varsa, linkin href özelliğine göre yönlendirme yap
+                    const url = new URL(link.href);
+                    // Ana sayfanın URL'sini 'http://localhost:5500/' olarak değiştir
+                    url.pathname = '/daily';
+                    window.location.href = url.toString();
+                }
+            });
         });
     </script>
 
